@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE COMPUTER ARCHIVE — From Vacuum Tubes to Artificial Intelligence</title>
+<meta name="description" content="Blog edukasi sejarah perkembangan komputer: lima generasi komputer dari tabung vakum hingga kecerdasan buatan, lengkap dengan tabel perbandingan, timeline, dan arsip foto. Tugas individu ARSIKOM.">
+<meta name="theme-color" content="#F8E8A6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ============ SVG SPRITE (ikon & ilustrasi buatan sendiri) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 64 64"><polygon points="32,4 40,24 62,26 45,40 50,60 32,48 14,60 19,40 2,26 24,24"/></symbol>
+    <symbol id="i-person" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="20" r="8"/><path d="M14 54c2-14 10-18 18-18s16 4 18 18z"/></g></symbol>
+    <symbol id="i-abacus" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="52" height="44" rx="3"/><path d="M6 30h52M18 10v44M32 10v44M46 10v44"/></g><g fill="currentColor" stroke="none"><circle cx="18" cy="20" r="4"/><circle cx="18" cy="38" r="4"/><circle cx="18" cy="46" r="4"/><circle cx="32" cy="22" r="4"/><circle cx="32" cy="40" r="4"/><circle cx="46" cy="20" r="4"/><circle cx="46" cy="38" r="4"/><circle cx="46" cy="46" r="4"/></g></symbol>
+    <symbol id="i-rods" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="10" height="52"/><rect x="19" y="6" width="10" height="52"/><rect x="32" y="6" width="10" height="52"/><rect x="45" y="6" width="10" height="52"/><path d="M6 22l10-6M6 36l10-6M6 50l10-6M19 22l10-6M19 36l10-6M19 50l10-6M32 22l10-6M32 36l10-6M32 50l10-6M45 22l10-6M45 36l10-6M45 50l10-6"/></g></symbol>
+    <symbol id="i-slide" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="16" width="56" height="14"/><rect x="8" y="30" width="48" height="14"/><path d="M12 16v6M20 16v6M28 16v6M36 16v6M44 16v6M52 16v6M16 44v-6M24 44v-6M32 44v-6M40 44v-6M48 44v-6"/></g></symbol>
+    <symbol id="i-gear" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="13"/><circle cx="32" cy="32" r="4"/><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M50.4 13.6l-5.7 5.7M19.3 44.7l-5.7 5.7"/></g></symbol>
+    <symbol id="i-engine" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="22" r="9"/><circle cx="20" cy="22" r="3"/><circle cx="44" cy="22" r="9"/><circle cx="44" cy="22" r="3"/><circle cx="32" cy="44" r="9"/><circle cx="32" cy="44" r="3"/><path d="M6 58h52M20 10v-4M44 10v-4M32 32v-2"/></g></symbol>
+    <symbol id="i-tube" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 40V20a10 10 0 0 1 20 0v20z"/><path d="M20 40h24v6H20z"/><path d="M26 46v10M32 46v10M38 46v10M28 36V24M36 36V24"/></g></symbol>
+    <symbol id="i-transistor" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36A16 16 0 0 1 48 36Z"/><path d="M24 36v20M32 36v20M40 36v20"/></g></symbol>
+    <symbol id="i-chip" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="32" height="32" rx="2"/><path d="M24 8v8M32 8v8M40 8v8M24 48v8M32 48v8M40 48v8M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8"/><circle cx="23" cy="23" r="1.5"/></g></symbol>
+    <symbol id="i-cpu" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="14" width="36" height="36" rx="2"/><rect x="23" y="23" width="18" height="18"/><path d="M22 6v8M32 6v8M42 6v8M22 50v8M32 50v8M42 50v8M6 22h8M6 32h8M6 42h8M50 22h8M50 32h8M50 42h8"/></g></symbol>
+    <symbol id="i-gui" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="52" height="40" rx="3"/><path d="M6 20h52"/><path d="M28 28v16l4-4 4 8 3-1-4-8h6z"/></g></symbol>
+    <symbol id="i-ai" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20L32 12M14 20L32 32M14 20L32 52M14 46L32 12M14 46L32 32M14 46L32 52M32 12L50 26M32 32L50 26M32 52L50 26M32 12L50 42M32 32L50 42M32 52L50 42"/><circle cx="14" cy="20" r="5"/><circle cx="14" cy="46" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="32" cy="32" r="5"/><circle cx="32" cy="52" r="5"/><circle cx="50" cy="26" r="5"/><circle cx="50" cy="42" r="5"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<!-- ============ A. NAVIGATION ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="THE COMPUTER ARCHIVE — ke atas">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true"><use href="#i-cpu"/></svg>
+      THE COMPUTER ARCHIVE
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Buka menu navigasi">☰ MENU</button>
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#history" data-nav="history">History</a></li>
+        <li><a href="#generations" data-nav="generations">Generations</a></li>
+        <li><a href="#comparison" data-nav="comparison">Comparison</a></li>
+        <li><a href="#references" data-nav="references">References</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ B. HERO ============ -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="hero-top" aria-hidden="true"><span>[ ARCHIVE 000 ]</span><span>[ COMPUTER HISTORY ]</span><span>ARSIKOM · TUGAS 1</span></div>
+      <span class="label">[ A DIGITAL HISTORY ARCHIVE ]</span>
+      <h1 id="hero-title"><span class="hl">MEET THE</span><span class="big">COMPUTER</span></h1>
+      <p class="sub">A Journey Through Five Generations of Computing</p>
+      <svg class="scribble" viewBox="0 0 150 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M3 9c20-8 30 4 50-2s30 4 50-2 30 3 44-1"/></svg>
+      <p class="desc">Dari mesin hitung mekanis dan komputer sebesar ruangan yang digerakkan tabung vakum, hingga chip, mikroprosesor, dan sistem yang mulai dirancang untuk mengambil keputusan sendiri. Arsip ini menelusuri bagaimana komputer berevolusi dari generasi ke generasi, disusun sebagai tugas individu mata kuliah Arsitektur dan Organisasi Komputer.</p>
+      <div class="cta">
+        <a class="pill" href="#history">★ EXPLORE THE GENERATIONS</a>
+        <small>From Vacuum Tubes to Artificial Intelligence</small>
+      </div>
+    </div>
+
+    <div class="collage" aria-label="Kolase komputer dari generasi pertama hingga kelima">
+      <svg class="star" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-star"/></svg>
+      <figure class="tile t1 bw">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colossus.jpg?width=800" alt="Foto arsip hitam-putih komputer Colossus, 1943 (Generasi 1)" data-page="https://commons.wikimedia.org/wiki/File:Colossus.jpg" width="500" height="331" decoding="async">
+        <figcaption class="tag">G1 · COLOSSUS 1943</figcaption>
+      </figure>
+      <figure class="tile t2 art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi transistor (Generasi 2)"><use href="#i-transistor"/></svg><figcaption class="tag">G2 · TRANSISTOR</figcaption></figure>
+      <figure class="tile t3 art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi chip sirkuit terpadu (Generasi 3)"><use href="#i-chip"/></svg><figcaption class="tag">G3 · IC</figcaption></figure>
+      <figure class="tile t4">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_II_IMG_4218-black.jpg?width=900" alt="Foto berwarna komputer pribadi Apple II (Generasi 4)" data-page="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" width="900" height="900" decoding="async">
+        <figcaption class="tag">G4 · APPLE II</figcaption>
+      </figure>
+      <figure class="tile t5 art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi jaringan saraf tiruan (Generasi 5)"><use href="#i-ai"/></svg><figcaption class="tag">G5 · AI</figcaption></figure>
+      <span class="arch" aria-hidden="true">[ ARCHIVE 001 ]</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARA MEMBACA ARSIP ============ -->
+<section class="sources" aria-labelledby="src-title">
+  <div class="wrap grid">
+    <div class="vert" aria-hidden="true">CONTENTS</div>
+    <div>
+      <span class="label">[ READ ME FIRST ]</span>
+      <h2 id="src-title" style="font-size:clamp(1.6rem,3.6vw,2.3rem)">Peta arsip &amp; cara membaca sumbernya</h2>
+      <ol class="toc">
+        <li><a href="#history"><b>01</b> Before the Computer</a></li>
+        <li><a href="#generations"><b>02</b> The Five Generations</a></li>
+        <li><a href="#archive"><b>03</b> Photo Archive</a></li>
+        <li><a href="#comparison"><b>04</b> Five Generations Compared</a></li>
+        <li><a href="#timeline"><b>05</b> Timeline — The Evolution</a></li>
+        <li><a href="#conclusion"><b>06</b> From Past to Future</a></li>
+        <li><a href="#references"><b>07</b> References &amp; Image Credits</a></li>
+      </ol>
+      <div class="cards">
+        <div class="card pale">
+          <h3>Dua sumber utama</h3>
+          <p><span class="s">S1</span> Dokumen <em>History of Computers</em> oleh Adrian Tennant (HackTech, Jamaika). Membagi generasi menjadi 1940–1956, 1959–1965, 1964–1974, 1971–1980, dan 1980–sekarang.</p>
+          <p><span class="s">S2</span> Dokumen PDF kedua berjudul <em>History of Computers</em>. Membagi generasi menjadi 1945–1955, 1955–1965, 1965–1975, 1976–sekarang, dan komputer 1990-an.</p>
+        </div>
+        <div class="card pale">
+          <h3>Perbedaan antar-sumber</h3>
+          <p>Kedua sumber <strong>tidak selalu sepakat</strong> soal tahun, contoh perangkat, dan detail teknis. Arsip ini menampilkan kedua versi dan memberi tanda sumber pada setiap klaim, bukan memilih salah satu secara diam-diam.</p>
+        </div>
+        <div class="card pale">
+          <h3>Sumber tambahan</h3>
+          <p>Informasi di luar kedua PDF diberi tanda <span class="s x">+</span> dan latar kotak putus-putus bertuliskan “Sumber tambahan”, lengkap dengan tautan di bagian References.</p>
+          <p>Bila sumber tidak menyebut suatu data (misalnya kapasitas memori), tabel menuliskan <span class="na">Tidak disebutkan dalam sumber</span>. Angka tidak dikarang.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ C. INTRODUCTION — BEFORE THE COMPUTER ============ -->
+<section class="sec history" id="history" aria-labelledby="history-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">[ ARCHIVE 001 ] · [ BEFORE THE COMPUTER ]</span>
+      <h2 id="history-title">Before the Computer</h2>
+      <p class="lead">Dari tongkat dan batu hingga mesin Babbage: kebutuhan menghitung lebih tua daripada komputer itu sendiri.</p>
+    </div>
+
+    <div class="hist-grid">
+      <div class="reveal">
+        <p class="defn">Komputer dapat didefinisikan sebagai perangkat apa pun yang membantu manusia melakukan berbagai komputasi atau perhitungan. <span class="s">S1</span></p>
+        <p>Menurut S2, manusia sudah membutuhkan alat hitung sejak mulai memelihara hewan dan berdagang dengan orang lain: mereka menyadari perlunya menghitung dan mencatat informasi. <span class="s">S2</span> S1 menambahkan bahwa sebelum komputer modern ditemukan orang memakai tongkat, batu, tulang, bahkan manusia sebagai alat bantu hitung. Orang yang pekerjaannya melakukan perhitungan disebut <em>computer</em>, dan istilah itu pertama kali tercatat pada <strong>1613</strong> untuk menyebut orang-orang tersebut. <span class="s">S1</span></p>
+        <p>Perkembangan berikutnya bergerak dari alat bantu hitung manual, ke mesin hitung mekanis, hingga rancangan mesin yang jauh lebih rumit. Rangkaian inilah yang menjadi latar bagi lima generasi komputer elektronik.</p>
+      </div>
+      <figure class="photo tilt-r reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arts_et_Metiers_Pascaline_dsc03869.jpg?width=900" alt="Foto Pascaline, mesin hitung mekanis Blaise Pascal, di Musée des Arts et Métiers" data-page="https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b>Pascaline — Blaise Pascal, 1642</b>Mesin hitung mekanis yang dibuat Pascal untuk meringankan perhitungan pajak ayahnya. <span class="s">S1</span> <span class="s">S2</span>
+          <span class="credit">Foto: David Monniaux (2005) · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+    </div>
+
+    <h3 class="reveal" style="font-size:1.3rem">Alat dan mesin hitung sebelum generasi komputer</h3>
+    <div class="tools">
+      <article class="tool reveal">
+        <div class="pic"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi abacus"><use href="#i-abacus"/></svg></div>
+        <div class="body">
+          <span class="when">±2400 SM <span class="s">S1</span> · ±5000 SM <span class="s">S2</span></span>
+          <h3>Abacus</h3>
+          <p>Alat mekanis berupa rangka dengan batang dan manik yang bisa digeser untuk membantu perhitungan. Namanya berasal dari kata Latin <em>abakos</em> (“meja hitung”). Bentuk yang paling dikenal mulai dipakai di Tiongkok sekitar 500 SM dan digunakan untuk operasi aritmetika dasar. S1 menyebutnya komputer pertama. <span class="s">S1</span></p>
+          <p class="credit">Ilustrasi buatan penulis website. Perbedaan tahun asal (S1: Babilonia; S2: Mesir dan Tiongkok) ditampilkan apa adanya.</p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi batang Napier"><use href="#i-rods"/></svg></div>
+        <div class="body">
+          <span class="when">1614 <span class="s">S1</span></span>
+          <h3>Napier’s Bones</h3>
+          <p>Ditemukan John Napier. Lebih rumit daripada abacus dan memungkinkan pengguna mengalikan, membagi, serta menghitung akar kuadrat dan akar pangkat tiga dengan menggerakkan batang-batang pada papan khusus. <span class="s">S1</span></p>
+          <p class="credit">Ilustrasi buatan penulis website. Sumber tambahan <span class="s x">+</span> (Science Museum Group) menyebut tahun 1617 untuk penemuan “bones”; lihat References.</p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi mistar hitung"><use href="#i-slide"/></svg></div>
+        <div class="body">
+          <span class="when">1620-an <span class="s">S2</span></span>
+          <h3>Slide Rule</h3>
+          <p>S2 mencatat penemuan slide rule pada 1620-an sebagai salah satu perkembangan setelah abacus. Sumber tidak menjelaskan cara kerjanya, sehingga arsip ini hanya mencantumkan periodenya.</p>
+          <p class="credit">Ilustrasi buatan penulis website.</p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arts_et_Metiers_Pascaline_dsc03869.jpg?width=700" alt="Foto Pascaline, kalkulator mekanis Blaise Pascal" data-page="https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg" loading="lazy" decoding="async"></button></div>
+        <div class="body">
+          <span class="when">1642 <span class="s">S1</span> <span class="s">S2</span></span>
+          <h3>Pascal Calculator</h3>
+          <p>Diciptakan Blaise Pascal, yang bergelut di bidang matematika dan filsafat, sebagai upaya mempermudah urusan pajak ayahnya. Alat ini cukup mahal. S2 menyebutnya mesin hitung mekanis pertama. <span class="s">S1</span> <span class="s">S2</span></p>
+          <p class="credit">Foto: David Monniaux · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg" target="_blank" rel="noopener">Commons</a></p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Leibniz_Stepped_Reckoner.png?width=800" alt="Foto Stepped Reckoner, mesin hitung buatan Leibniz" data-page="https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner.png" loading="lazy" decoding="async"></button></div>
+        <div class="body">
+          <span class="when">1672 <span class="s">S1</span></span>
+          <h3>Stepped Reckoner</h3>
+          <p>Dibuat Gottfried Wilhelm Leibniz. Mesin ini dapat melakukan keempat operasi matematika (tambah, kurang, kali, bagi) secara otomatis. <span class="s">S1</span></p>
+          <p class="credit">Gambar: J. A. V. Turck (1921), domain publik · <a href="https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner.png" target="_blank" rel="noopener">Commons</a></p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/BabbageDifferenceEngine.jpg?width=800" alt="Foto bagian Difference Engine Charles Babbage di Whipple Museum, Cambridge" data-page="https://commons.wikimedia.org/wiki/File:BabbageDifferenceEngine.jpg" loading="lazy" decoding="async"></button></div>
+        <div class="body">
+          <span class="when">1822 <span class="s">S2</span></span>
+          <h3>Difference Engine</h3>
+          <p>S2 menyebut komputer pertama kemungkinan dirancang oleh Charles Babbage pada 1822 lewat mesin yang ia namakan <em>difference engine</em>. <span class="s">S2</span></p>
+          <p class="credit">Foto: bagian mesin di Whipple Museum, Cambridge · CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:BabbageDifferenceEngine.jpg" target="_blank" rel="noopener">Commons</a></p>
+        </div>
+      </article>
+      <article class="tool reveal">
+        <div class="pic"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi roda gigi mesin analitik"><use href="#i-engine"/></svg></div>
+        <div class="body">
+          <span class="when">1834 <span class="s">S2</span></span>
+          <h3>Analytical Engine</h3>
+          <p>Babbage mengusulkan mesin hitung yang lebih rumit, sepenuhnya mekanis, dan membutuhkan ribuan komponen. Ia tidak mampu membuat sebagian besar komponennya karena keterbatasan teknologi pada zamannya. <span class="s">S2</span></p>
+          <p class="credit">Ilustrasi buatan penulis website.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="why">
+      <div class="reveal">
+        <span class="label">[ ANALISIS PENULIS ]</span>
+        <h3>Mengapa ini menjadi dasar komputer modern?</h3>
+      </div>
+      <div class="reveal">
+        <p>Rangkaian alat di atas menunjukkan tiga pergeseran. <strong>Pertama</strong>, dari alat bantu yang digerakkan tangan (abacus, batang Napier) ke mesin yang melakukan operasi aritmetika secara mekanis (Pascal) dan otomatis (Leibniz). <strong>Kedua</strong>, dari satu fungsi hitung ke rancangan mesin yang lebih rumit dengan ribuan komponen (Babbage). <strong>Ketiga</strong>, munculnya batas teknologi manufaktur sebagai penghalang: rancangan Babbage tidak terealisasi karena komponennya belum dapat dibuat.</p>
+        <p>Pola ketiga terulang di setiap generasi sesudahnya: lompatan komponen, dari tabung vakum ke transistor, chip, dan mikroprosesor, selalu membuka kemungkinan yang sebelumnya hanya berupa gagasan. Karena itu sejarah ini penting bagi studi arsitektur dan organisasi komputer: rancangan mesin selalu bergantung pada komponen yang tersedia.</p>
+        <div class="callout"><strong>Catatan antar-sumber</strong>S1 menyebut abacus berasal dari Babilonia ±2400 SM, sedangkan S2 menyebut abacus bermula ±5000 SM di Mesir dan Tiongkok. Kedua angka ditampilkan karena PDF tidak memberikan penjelasan untuk perbedaan tersebut.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ D. FIVE GENERATIONS ============ -->
+<section id="generations" aria-labelledby="gens-title">
+  <div class="gens-intro">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:1rem">
+        <span class="label">[ ARCHIVE 002 ] · [ THE FIVE GENERATIONS ]</span>
+        <h2 id="gens-title">The Five Generations of Computers</h2>
+        <p class="lead">S2 menjelaskan bahwa evolusi komputer sejak abad ke-16 hingga bentuknya sekarang dibagi menjadi lima fase yang disebut generasi komputer. S1 juga menyebut ada lima generasi. <span class="s">S1</span> <span class="s">S2</span></p>
+        <p>Pembagian ini adalah <strong>kerangka historis</strong> untuk memahami perkembangan teknologi, bukan klasifikasi mutlak untuk setiap komputer. Garis batas antar-generasi pun berbeda di tiap sumber, seperti terlihat pada diagram berikut.</p>
+      </div>
+
+      <div class="range reveal" role="group" aria-label="Perbandingan rentang tahun lima generasi menurut S1 dan S2">
+        <h3>Rentang tahun menurut dua sumber</h3>
+        <div class="r-axis" aria-hidden="true"><span>1940</span><span>1960</span><span>1980</span><span>2000</span><span>2020</span></div>
+
+        <div class="r-row"><b>G1</b><div class="r-track" aria-hidden="true"><i class="a" style="left:0%;width:20%"></i><i class="b" style="left:6.25%;width:12.5%"></i></div><div class="r-txt">S1: 1940–1956 · S2: 1945–1955</div></div>
+        <div class="r-row"><b>G2</b><div class="r-track" aria-hidden="true"><i class="a" style="left:23.75%;width:7.5%"></i><i class="b" style="left:18.75%;width:12.5%"></i></div><div class="r-txt">S1: 1959–1965 · S2: 1955–1965</div></div>
+        <div class="r-row"><b>G3</b><div class="r-track" aria-hidden="true"><i class="a" style="left:30%;width:12.5%"></i><i class="b" style="left:31.25%;width:12.5%"></i></div><div class="r-txt">S1: 1964–1974 · S2: 1965–1975</div></div>
+        <div class="r-row"><b>G4</b><div class="r-track" aria-hidden="true"><i class="a" style="left:38.75%;width:11.25%"></i><i class="b now" style="left:45%;width:55%"></i></div><div class="r-txt">S1: 1971–1980 · S2: 1976–sekarang</div></div>
+        <div class="r-row"><b>G5</b><div class="r-track" aria-hidden="true"><i class="a now" style="left:50%;width:50%"></i><i class="b now" style="left:62.5%;width:37.5%"></i></div><div class="r-txt">S1: 1980–sekarang · S2: komputer 1990-an (masih tahap pengembangan)</div></div>
+        <div class="legend"><span class="l1">S1 — Tennant / HackTech</span><span class="l2">S2 — PDF kedua</span></div>
+      </div>
+      <p class="badge-note">Catatan: pengantar S2 menyebut “four computer generations”, tetapi isinya menguraikan lima fase. Arsip ini mengikuti uraian lima fase tersebut.</p>
+    </div>
+  </div>
+
+  <div class="gen-nav" aria-label="Lompat ke generasi">
+    <div class="wrap"><ul>
+      <li><a href="#gen-1" data-gen="gen-1">G1 · Vacuum Tubes</a></li>
+      <li><a href="#gen-2" data-gen="gen-2">G2 · Transistors</a></li>
+      <li><a href="#gen-3" data-gen="gen-3">G3 · Integrated Circuits</a></li>
+      <li><a href="#gen-4" data-gen="gen-4">G4 · Microprocessors</a></li>
+      <li><a href="#gen-5" data-gen="gen-5">G5 · Artificial Intelligence</a></li>
+    </ul></div>
+  </div>
+
+  <!-- ===================== GENERASI 1 ===================== -->
+  <article class="gen gen-1" id="gen-1" aria-labelledby="gen-1-title">
+    <div class="wrap">
+      <div class="gen-head reveal">
+        <div class="gnum" aria-hidden="true">01</div>
+        <div>
+          <span class="label">[ GENERATION 01 ]</span>
+          <h3 id="gen-1-title">Vacuum Tubes</h3>
+          <div class="years"><span><b>S1</b> 1940–1956</span><span><b>S2</b> 1945–1955</span></div>
+        </div>
+      </div>
+
+      <div class="gen-top">
+        <div class="gen-fig">
+          <figure class="photo bw tilt-l reveal">
+            <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colossus.jpg?width=1000" alt="Foto arsip hitam-putih komputer Colossus saat beroperasi, 1943" data-page="https://commons.wikimedia.org/wiki/File:Colossus.jpg" loading="lazy" decoding="async"></button>
+            <figcaption><b>Colossus, 1943</b>Dibangun Inggris untuk mempercepat pemecahan sandi Lorenz. <span class="s">S2</span>
+              <span class="credit">Foto arsip: The National Archives (UK), FO 850/234 · domain publik · <a href="https://commons.wikimedia.org/wiki/File:Colossus.jpg" target="_blank" rel="noopener">Commons</a>. Resolusi berkas asli hanya 500 × 331 px.</span></figcaption>
+          </figure>
+          <figure class="photo bw tilt-r reveal">
+            <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ordenador_IBM650_1959_MUNCYT.jpg?width=900" alt="Foto IBM 650 Magnetic Drum Data-Processing Machine di koleksi museum MUNCYT" data-page="https://commons.wikimedia.org/wiki/File:Ordenador_IBM650_1959_MUNCYT.jpg" loading="lazy" decoding="async"></button>
+            <figcaption><b>IBM 650</b>Contoh komputer generasi pertama menurut S1. <span class="s">S1</span>
+              <span class="credit">Foto: MUNCYT2 · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Ordenador_IBM650_1959_MUNCYT.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Generasi pertama menandai peralihan dari mesin hitung mekanis ke mesin elektronik. Komponen utamanya adalah <strong>tabung vakum</strong>, dengan segala konsekuensi fisiknya: ukuran raksasa, panas berlebih, dan kerentanan terhadap kerusakan. <span class="s">S1</span> <span class="s">S2</span></p>
+          <p>Perang Dunia II ikut mendorong perkembangan komputer. Mesin <strong>Colossus</strong> dibangun Inggris pada 1943 untuk mempercepat pemecahan sandi Lorenz yang dipakai Komando Tinggi Angkatan Darat Jerman untuk berkomunikasi lewat radio secara rahasia. Sandi itu berbasis teleprinter, teknologi untuk mengirim pesan teks lewat saluran telepon dengan kecepatan tinggi. <span class="s">S2</span></p>
+          <ul class="quick">
+            <li><b>Teknologi</b><span>Tabung vakum (sirkuit), magnetic drum (memori)</span></li>
+            <li><b>Bahasa</b><span>Bahasa mesin; plugboard dan urutan 0 dan 1</span></li>
+            <li><b>Input/Output</b><span>Kartu berlubang &amp; pita kertas / printout</span></li>
+            <li><b>Contoh</b><span>IBM 650, Colossus</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g1-tech"><h4 id="g1-tech"><span class="n">01</span>Teknologi utama</h4>
+          <p>Komputer generasi ini memakai tabung vakum untuk sirkuit dan magnetic drum untuk memori. <span class="s">S1</span> Satu mesin memuat puluhan ribu tabung vakum. <span class="s">S2</span></p></section>
+        <section class="card reveal" aria-labelledby="g1-char"><h4 id="g1-char"><span class="n">02</span>Karakteristik perangkat</h4>
+          <ul>
+            <li>Sangat besar, memenuhi seluruh ruangan. <span class="s">S1</span> <span class="s">S2</span></li>
+            <li>Memerlukan pendingin ruangan (A/C) untuk membuang panas dari banyaknya tabung. <span class="s">S1</span> <span class="s">S2</span></li>
+            <li>Mahal dari sisi biaya maupun penggunaan. <span class="s">S1</span></li>
+            <li>Hanya mampu memproses satu masalah pada satu waktu. <span class="s">S1</span></li>
+          </ul></section>
+        <section class="card reveal" aria-labelledby="g1-how"><h4 id="g1-how"><span class="n">03</span>Cara kerja &amp; prinsip teknologi</h4>
+          <p>Masukan diberikan lewat kartu berlubang dan pita kertas, sedangkan keluaran ditampilkan pada printout. <span class="s">S1</span> Mesin dikendalikan dengan memasang kabel pada <em>plugboard</em> untuk mengatur fungsi dasarnya, memakai urutan hanya 0 dan 1. <span class="s">S2</span></p>
+          <p class="badge-note">Penjelasan konseptual penulis: tabung vakum berperan sebagai elemen sirkuit elektronik sehingga keadaan 0 dan 1 dapat direpresentasikan oleh sinyal listrik.</p></section>
+        <section class="card reveal" aria-labelledby="g1-prog"><h4 id="g1-prog"><span class="n">04</span>Pemrograman &amp; penyimpanan</h4>
+          <p>Pemrograman bergantung pada bahasa mesin. <span class="s">S1</span> Penyimpanan memori memakai magnetic drum. <span class="s">S1</span> Kapasitas dan kecepatan tidak disebutkan secara angka oleh kedua PDF.</p></section>
+      </div>
+
+      <div class="pc">
+        <section class="card pros reveal" aria-labelledby="g1-pro"><h4 id="g1-pro">Kelebihan <span class="badge-note">(disarikan dari sumber)</span></h4>
+          <ul>
+            <li>Menjadi generasi komputer elektronik pertama; tabung vakum menggantikan sistem mekanis.</li>
+            <li>Terbukti berguna untuk kebutuhan mendesak: Colossus mempercepat pemecahan sandi Lorenz. <span class="s">S2</span></li>
+            <li>Dapat menerima program lewat plugboard, kartu, dan pita. <span class="s">S1</span> <span class="s">S2</span></li>
+          </ul></section>
+        <section class="card cons reveal" aria-labelledby="g1-con"><h4 id="g1-con">Kekurangan</h4>
+          <ul>
+            <li>Ukuran sangat besar, panas tinggi, perlu pendingin ekstensif. <span class="s">S1</span> <span class="s">S2</span></li>
+            <li>Lambat, tidak andal (tingkat kegagalan tinggi), dan mahal. <span class="s">S2</span></li>
+            <li>Pemrograman sulit karena langsung memakai bahasa mesin / kabel plugboard. <span class="s">S1</span> <span class="s">S2</span></li>
+          </ul></section>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g1-ex"><h4 id="g1-ex"><span class="n">05</span>Contoh komputer</h4>
+          <ul><li><strong>IBM 650</strong> (650 Magnetic Drum Data-Processing Machine). <span class="s">S1</span></li><li><strong>Colossus</strong>, 1943. <span class="s">S2</span></li></ul>
+          <div class="callout extra"><strong>Sumber tambahan <span class="s x">+</span></strong>IBM 650 diumumkan Juli 1953, pengiriman pertama Desember 1954; drum memorinya berputar 12.500 rpm dan menyimpan 20.000 digit pada 2.000 alamat (Gunkies; Ingenium). Colossus Mark 1 bekerja pada Desember 1943 dan dipakai di Bletchley Park pada awal 1944 (Wikipedia).</div></section>
+        <section class="card reveal" aria-labelledby="g1-imp"><h4 id="g1-imp"><span class="n">06</span>Dampak ke generasi berikutnya</h4>
+          <p>Ukuran besar, panas, dan keandalan rendah menjadi masalah yang diatasi generasi berikutnya ketika transistor menggantikan tabung vakum. <span class="s">S1</span> <span class="s">S2</span></p></section>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================== GENERASI 2 ===================== -->
+  <article class="gen gen-2" id="gen-2" aria-labelledby="gen-2-title">
+    <div class="wrap">
+      <div class="gen-head reveal">
+        <div class="gnum" aria-hidden="true">02</div>
+        <div>
+          <span class="label">[ GENERATION 02 ]</span>
+          <h3 id="gen-2-title">Transistors</h3>
+          <div class="years"><span><b>S1</b> 1959–1965</span><span><b>S2</b> 1955–1965</span></div>
+        </div>
+      </div>
+
+      <div class="gen-top flip">
+        <div class="gen-fig">
+          <figure class="photo tilt-r reveal">
+            <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi transistor"><use href="#i-transistor"/></svg></div>
+            <figcaption><b>Ilustrasi: transistor</b>Gambar skematis buatan penulis website. Foto komputer generasi kedua yang lisensinya dapat diverifikasi belum tersedia pada arsip ini.</figcaption>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Transistor menggantikan tabung vakum dan memicu lahirnya generasi kedua. Menurut S1, satu transistor setara dengan 40 tabung vakum, sehingga komputer menjadi lebih kecil, lebih hemat biaya, dan lebih dapat diandalkan. <span class="s">S1</span> S2 menyebut transistor diperkenalkan pada pertengahan 1950-an. <span class="s">S2</span></p>
+          <p>Generasi ini juga membawa perubahan besar pada cara memprogram: dari bahasa mesin biner yang sulit dibaca ke bahasa assembly <span class="s">S1</span> dan bahasa tingkat tinggi. <span class="s">S2</span></p>
+          <ul class="quick">
+            <li><b>Teknologi</b><span>Transistor; magnetic core untuk instruksi</span></li>
+            <li><b>Bahasa</b><span>Assembly; COBOL &amp; FORTRAN</span></li>
+            <li><b>Penyimpanan</b><span>Pita magnetik (magnetic tape)</span></li>
+            <li><b>Contoh</b><span>UNIVAC 1108 (menurut S1)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <section class="card pale reveal" aria-labelledby="g2-tech"><h4 id="g2-tech"><span class="n">01</span>Teknologi utama</h4>
+          <p>Transistor menggantikan tabung vakum. <span class="s">S1</span> <span class="s">S2</span> Teknologi <em>magnetic core</em> dipakai untuk menyimpan instruksi. <span class="s">S1</span></p></section>
+        <section class="card pale reveal" aria-labelledby="g2-char"><h4 id="g2-char"><span class="n">02</span>Karakteristik perangkat</h4>
+          <ul>
+            <li>Lebih kecil, lebih cepat, dan lebih andal dibanding generasi 1. <span class="s">S2</span></li>
+            <li>Lebih hemat biaya dan secara keseluruhan lebih dapat diandalkan. <span class="s">S1</span></li>
+            <li>Masalah panas berlebih (overheating) masih ada akibat teknologi baru ini. <span class="s">S1</span></li>
+          </ul></section>
+        <section class="card pale reveal" aria-labelledby="g2-how"><h4 id="g2-how"><span class="n">03</span>Cara kerja &amp; prinsip teknologi</h4>
+          <p>Transistor melakukan peran sirkuit yang sebelumnya dikerjakan tabung vakum, dalam ukuran jauh lebih kecil. Perbandingan satu transistor setara 40 tabung menggambarkan lompatan kepadatan komponen. <span class="s">S1</span></p></section>
+        <section class="card pale reveal" aria-labelledby="g2-prog"><h4 id="g2-prog"><span class="n">04</span>Pemrograman &amp; penyimpanan</h4>
+          <p>Pergeseran dari bahasa mesin biner ke <em>assembly</em>. <span class="s">S1</span> Bahasa tingkat tinggi <strong>COBOL</strong> (COmmon Business Oriented Language) dan <strong>FORTRAN</strong> (FORmula TRANslator) memungkinkan program ditulis dengan pernyataan mirip bahasa Inggris. <span class="s">S2</span> <em>Magnetic tape</em> diperkenalkan sebagai media penyimpanan. <span class="s">S2</span></p></section>
+      </div>
+
+      <div class="pc">
+        <section class="card pros reveal" aria-labelledby="g2-pro"><h4 id="g2-pro">Kelebihan</h4>
+          <ul><li>Ukuran lebih kecil, lebih cepat, lebih andal. <span class="s">S2</span></li><li>Lebih hemat biaya. <span class="s">S1</span></li><li>Pemrograman lebih mudah lewat assembly dan bahasa tingkat tinggi. <span class="s">S1</span> <span class="s">S2</span></li></ul></section>
+        <section class="card cons reveal" aria-labelledby="g2-con"><h4 id="g2-con">Kekurangan</h4>
+          <ul><li>Masalah overheating akibat teknologi baru. <span class="s">S1</span></li><li>Sumber tidak menyebutkan kekurangan lain secara eksplisit.</li></ul></section>
+      </div>
+
+      <div class="blocks">
+        <section class="card pale reveal" aria-labelledby="g2-ex"><h4 id="g2-ex"><span class="n">05</span>Contoh komputer</h4>
+          <ul><li><strong>UNIVAC 1108</strong>. <span class="s">S1</span></li></ul>
+          <p class="badge-note">Klasifikasi UNIVAC 1108 ke generasi 2 mengikuti S1. Literatur lain dapat menggolongkan berbeda; periksa kembali sebelum mengutipnya di tempat lain.</p></section>
+        <section class="card pale reveal" aria-labelledby="g2-imp"><h4 id="g2-imp"><span class="n">06</span>Dampak ke generasi berikutnya</h4>
+          <p>Bahasa tingkat tinggi dan penyimpanan magnetik meletakkan dasar praktik pemrograman modern. Transistor yang makin kecil kemudian ditempatkan pada papan sirkuit bersama chip silikon/semikonduktor, yang melahirkan generasi 3. <span class="s">S1</span></p></section>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================== GENERASI 3 ===================== -->
+  <article class="gen gen-3" id="gen-3" aria-labelledby="gen-3-title">
+    <div class="wrap">
+      <div class="gen-head reveal">
+        <div class="gnum" aria-hidden="true">03</div>
+        <div>
+          <span class="label">[ GENERATION 03 ]</span>
+          <h3 id="gen-3-title">Integrated Circuits</h3>
+          <div class="years"><span><b>S1</b> 1964–1974</span><span><b>S2</b> 1965–1975</span></div>
+        </div>
+      </div>
+
+      <div class="gen-top">
+        <div class="gen-fig">
+          <figure class="photo tilt-l reveal">
+            <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi chip sirkuit terpadu"><use href="#i-chip"/></svg></div>
+            <figcaption><b>Ilustrasi: integrated circuit (chip)</b>Gambar skematis buatan penulis website. Foto IBM System/360 dari Wikimedia Commons dapat ditambahkan setelah lisensinya diperiksa.</figcaption>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Pada generasi ketiga, <strong>integrated circuit (IC)</strong>, juga disebut chip, menggantikan transistor tunggal. Beberapa transistor ditempatkan pada satu chip silikon yang ukuran dan kebutuhan dayanya sangat kecil, sehingga komputer menjadi lebih cepat, lebih kecil, dan lebih andal. <span class="s">S2</span></p>
+          <p>S1 menggambarkan lonjakan performa yang drastis dan menurunnya harga serta ukuran, sehingga komputer lebih mudah diakses publik. <span class="s">S1</span></p>
+          <ul class="quick">
+            <li><b>Teknologi</b><span>IC pada chip silikon (SSI, MSI, LSI)</span></li>
+            <li><b>Penyimpanan</b><span>Magnetic disk menggantikan pita</span></li>
+            <li><b>Antarmuka</b><span>Sistem operasi; keyboard &amp; monitor</span></li>
+            <li><b>Contoh</b><span>IBM-360 series</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g3-tech"><h4 id="g3-tech"><span class="n">01</span>Teknologi utama</h4>
+          <p>Chip menggantikan transistor tunggal: beberapa transistor dipegang dalam satu chip silikon. <span class="s">S2</span> Tingkat integrasi diklasifikasikan menurut jumlah transistor per chip:</p>
+          <table class="mini-table">
+            <caption class="sr-only">Tingkat integrasi IC</caption>
+            <thead><tr><th scope="col">Tingkat</th><th scope="col">Transistor per chip</th><th scope="col">Generasi</th></tr></thead>
+            <tbody>
+              <tr><td>SSI</td><td>puluhan</td><td>3</td></tr>
+              <tr><td>MSI</td><td>ratusan</td><td>3</td></tr>
+              <tr><td>LSI</td><td>puluhan ribu</td><td>3</td></tr>
+              <tr><td>VLSI</td><td>ratusan ribu atau lebih</td><td>4</td></tr>
+            </tbody>
+          </table>
+          <p class="badge-note">Sumber: S2. SSI = Small-Scale, MSI = Medium-Scale, LSI = Large-Scale, VLSI = Very Large-Scale Integration.</p></section>
+        <section class="card reveal" aria-labelledby="g3-char"><h4 id="g3-char"><span class="n">02</span>Karakteristik perangkat</h4>
+          <ul>
+            <li>Lebih cepat, kecil, dan andal dibanding sebelumnya. <span class="s">S2</span></li>
+            <li>Mampu menjalankan instruksi dengan kecepatan yang belum pernah ada, misalnya dalam orde sepersemiliar detik. <span class="s">S1</span></li>
+            <li>Harga dan ukuran turun drastis sehingga lebih mudah diakses publik. <span class="s">S1</span></li>
+            <li>Mulai memakai sistem operasi berantarmuka serta perangkat periferal seperti keyboard dan monitor. <span class="s">S1</span></li>
+          </ul></section>
+        <section class="card reveal" aria-labelledby="g3-how"><h4 id="g3-how"><span class="n">03</span>Cara kerja &amp; prinsip teknologi</h4>
+          <p>Prinsip utamanya adalah <strong>integrasi</strong>: banyak transistor dibuat bersama pada satu keping silikon, bukan dirakit satu per satu. S1 menggambarkannya sebagai transistor yang makin kecil, ditempatkan pada papan sirkuit bersama chip silikon/semikonduktor. <span class="s">S1</span> <span class="s">S2</span></p></section>
+        <section class="card reveal" aria-labelledby="g3-prog"><h4 id="g3-prog"><span class="n">04</span>Pemrograman &amp; penyimpanan</h4>
+          <p><em>Magnetic disk</em> menggantikan magnetic tape sebagai media penyimpanan. <span class="s">S2</span> Pita magnetik tetap dipakai hingga sekarang, tetapi hanya sebagai media cadangan (backup) karena murah dan berkapasitas besar. <span class="s">S2</span> Bahasa pemrograman spesifik generasi ini tidak dirinci oleh sumber.</p></section>
+      </div>
+
+      <div class="pc">
+        <section class="card pros reveal" aria-labelledby="g3-pro"><h4 id="g3-pro">Kelebihan</h4>
+          <ul><li>Performa dan efisiensi naik drastis. <span class="s">S1</span></li><li>Lebih kecil, lebih andal, kebutuhan daya chip sangat kecil. <span class="s">S2</span></li><li>Lebih terjangkau karena harga dan ukuran turun. <span class="s">S1</span></li></ul></section>
+        <section class="card cons reveal" aria-labelledby="g3-con"><h4 id="g3-con">Kekurangan</h4>
+          <ul><li>Sumber tidak menyebut kekurangan secara eksplisit.</li><li>Tingkat integrasi generasi ini (SSI–LSI) masih di bawah VLSI yang baru dicapai pada generasi 4. <span class="s">S2</span></li></ul></section>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g3-ex"><h4 id="g3-ex"><span class="n">05</span>Contoh komputer</h4>
+          <ul><li><strong>IBM-360 series</strong>. <span class="s">S1</span></li></ul>
+          <div class="callout extra"><strong>Sumber tambahan <span class="s x">+</span></strong>Seri IBM System/360 diumumkan pada April 1964. Model 30 yang paling kecil mulai dikirim Juni 1965 dengan memori inti 64 KB dan kecepatan 34.500 penjumlahan bilangan tetap per detik (Computer History Museum; Wikipedia).</div></section>
+        <section class="card reveal" aria-labelledby="g3-imp"><h4 id="g3-imp"><span class="n">06</span>Dampak ke generasi berikutnya</h4>
+          <p>Tingkat integrasi terus naik hingga VLSI, yang menjadi ciri generasi 4. <span class="s">S2</span> Turunnya harga dan ukuran membuka jalan bagi komputer yang dapat diakses lebih luas. <span class="s">S1</span></p></section>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================== GENERASI 4 ===================== -->
+  <article class="gen gen-4" id="gen-4" aria-labelledby="gen-4-title">
+    <div class="wrap">
+      <div class="gen-head reveal">
+        <div class="gnum" aria-hidden="true">04</div>
+        <div>
+          <span class="label">[ GENERATION 04 ]</span>
+          <h3 id="gen-4-title">Microprocessors</h3>
+          <div class="years"><span><b>S1</b> 1971–1980</span><span><b>S2</b> 1976–sekarang</span></div>
+        </div>
+      </div>
+
+      <div class="gen-top flip">
+        <div class="gen-fig">
+          <figure class="photo tilt-r reveal">
+            <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_II_IMG_4218-black.jpg?width=1000" alt="Foto berwarna komputer pribadi Apple II di Musée Bolo, Lausanne" data-page="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" loading="lazy" decoding="async"></button>
+            <figcaption><b>Apple II</b>Komputer pribadi berbasis mikroprosesor. <span class="s x">+</span>
+              <span class="credit">Foto: Rama &amp; Musée Bolo · CC BY-SA 2.0 FR · <a href="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+          </figure>
+          <figure class="photo tilt-l reveal">
+            <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KL_Intel_i8080_Black_Background.jpg?width=900" alt="Foto mikroprosesor Intel 8080 dengan latar hitam" data-page="https://commons.wikimedia.org/wiki/File:KL_Intel_i8080_Black_Background.jpg" loading="lazy" decoding="async"></button>
+            <figcaption><b>Mikroprosesor Intel 8080</b>Contoh CPU dalam satu chip. <span class="s x">+</span>
+              <span class="credit">Foto: Konstantin Lanzet · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:KL_Intel_i8080_Black_Background.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Pengembangan teknologi <strong>VLSI</strong> membuat komputer lebih kecil, lebih murah, lebih bertenaga, efisien, dan andal. Dari VLSI lahirlah <strong>mikroprosesor</strong>. <span class="s">S2</span></p>
+          <p>Mikroprosesor, juga disebut <em>Central Processing Unit</em> (CPU), adalah perangkat kecil yang memuat komponen utama komputer: <em>Arithmetic and Logic Unit</em> (ALU), register, dan unit kontrol. <span class="s">S2</span> Dari sinilah <em>personal computer</em> (PC) berkembang. Karena harga rendah dan mudah digunakan, PC mulai dipakai di rumah, kantor kecil, dan sekolah. <span class="s">S2</span></p>
+          <ul class="quick">
+            <li><b>Teknologi</b><span>VLSI, mikroprosesor (CPU)</span></li>
+            <li><b>Antarmuka</b><span>Command-driven → GUI &amp; mouse</span></li>
+            <li><b>Jaringan</b><span>Jaringan komputer, lalu internet</span></li>
+            <li><b>Contoh</b><span>PC, CRAY-1 (S1), Macintosh (S2)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g4-tech"><h4 id="g4-tech"><span class="n">01</span>Teknologi utama</h4>
+          <p>VLSI (ratusan ribu transistor atau lebih per chip) dan mikroprosesor. <span class="s">S2</span> Inovasi arsitektur komputer memfasilitasi lahirnya jaringan komputer, kemudian internet. <span class="s">S1</span></p></section>
+        <section class="card reveal" aria-labelledby="g4-char"><h4 id="g4-char"><span class="n">02</span>Karakteristik perangkat</h4>
+          <ul>
+            <li>Ukuran kecil, harga lebih murah, lebih bertenaga, efisien, dan andal. <span class="s">S2</span></li>
+            <li>PC ramah pengguna dan terjangkau: dipakai di rumah, kantor kecil, dan sekolah. <span class="s">S2</span></li>
+            <li>Muncul antarmuka grafis (GUI), mouse, dan perangkat genggam. <span class="s">S1</span></li>
+          </ul></section>
+        <section class="card reveal" aria-labelledby="g4-how"><h4 id="g4-how"><span class="n">03</span>Cara kerja &amp; prinsip teknologi</h4>
+          <p>Satu mikroprosesor menyatukan tiga komponen kunci. <strong>ALU</strong> melakukan operasi aritmetika dan logika, <strong>register</strong> menyimpan data sementara, dan <strong>unit kontrol</strong> mengatur jalannya instruksi. <span class="s">S2</span> <span class="badge-note">(Penjelasan fungsi tiap komponen adalah definisi umum penulis.)</span></p></section>
+        <section class="card reveal" aria-labelledby="g4-ui"><h4 id="g4-ui"><span class="n">04</span>Interaksi dengan pengguna</h4>
+          <p>Hingga pertengahan 1980-an, pengguna memberi perintah dengan mengetik lewat keyboard (<em>command-driven interface</em>). Kemudian perintah dapat diberikan dengan mengeklik gambar di layar memakai mouse (<em>Graphical User Interface</em>, GUI), yang membuat komputer lebih ramah pengguna. Konsep ini dikembangkan Xerox PARC pada 1973 lewat prototipe <strong>Alto</strong>, dan pada 1984 komputer <strong>Macintosh</strong> milik Apple membawa antarmuka ramah pengguna ke banyak pengguna PC. <span class="s">S2</span></p></section>
+      </div>
+
+      <div class="pc">
+        <section class="card pros reveal" aria-labelledby="g4-pro"><h4 id="g4-pro">Kelebihan</h4>
+          <ul><li>Kecil, murah, bertenaga, efisien, andal. <span class="s">S2</span></li><li>Mudah digunakan berkat GUI. <span class="s">S2</span></li><li>Memungkinkan jaringan komputer dan internet. <span class="s">S1</span></li></ul></section>
+        <section class="card cons reveal" aria-labelledby="g4-con"><h4 id="g4-con">Kekurangan</h4>
+          <ul><li>Sumber tidak menyebut kekurangan secara eksplisit.</li><li>Pada awalnya antarmuka bersifat command-driven sehingga pengguna harus mengetik perintah. <span class="s">S2</span></li></ul></section>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g4-ex"><h4 id="g4-ex"><span class="n">05</span>Contoh komputer</h4>
+          <ul><li><strong>CRAY-1</strong> (superkomputer). <span class="s">S1</span></li><li><strong>Xerox Alto</strong> (prototipe GUI, 1973) dan <strong>Apple Macintosh</strong> (1984). <span class="s">S2</span></li><li>Personal computer (PC) secara umum. <span class="s">S2</span></li></ul>
+          <div class="callout extra"><strong>Sumber tambahan <span class="s x">+</span></strong>Cray-1 diumumkan pada 1975 (Wikipedia), berclock 80 MHz (12,5 ns), dan dicatat sepuluh kali lebih cepat daripada mesin pesaingnya (Computer History Museum). Intel 4004 (1971) adalah mikroprosesor pertama yang dijual secara komersial (Science Museum Group). Altair 8800 (1975) berbasis Intel 8080 dan Apple II tampil pada 1977 (Ingenium).</div></section>
+        <section class="card reveal" aria-labelledby="g4-imp"><h4 id="g4-imp"><span class="n">06</span>Dampak ke generasi berikutnya</h4>
+          <p>Jaringan komputer, internet, GUI, dan mouse mengubah komputer dari mesin khusus menjadi perangkat sehari-hari. <span class="s">S1</span> <span class="s">S2</span> Fondasi ini menyiapkan lahirnya sistem berbasis kecerdasan buatan pada generasi 5.</p></section>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================== GENERASI 5 ===================== -->
+  <article class="gen gen-5" id="gen-5" aria-labelledby="gen-5-title">
+    <div class="wrap">
+      <div class="gen-head reveal">
+        <div class="gnum" aria-hidden="true">05</div>
+        <div>
+          <span class="label">[ GENERATION 05 ]</span>
+          <h3 id="gen-5-title">Artificial Intelligence</h3>
+          <div class="years"><span><b>S1</b> 1980–sekarang</span><span><b>S2</b> komputer 1990-an</span></div>
+        </div>
+      </div>
+
+      <div class="gen-top">
+        <div class="gen-fig">
+          <figure class="photo tilt-l reveal">
+            <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi jaringan saraf tiruan"><use href="#i-ai"/></svg></div>
+            <figcaption><b>Ilustrasi: jaringan node (kecerdasan buatan)</b>Gambar skematis buatan penulis website, bukan foto perangkat tertentu.</figcaption>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Generasi kelima berfokus pada <strong>kecerdasan buatan</strong>. S1 menggambarkannya sebagai sistem yang disematkan AI dan/atau robotika, berkembang pesat dari hari ke hari. <span class="s">S1</span> S2 menyebut kecepatannya sangat tinggi, mampu pemrosesan paralel, dan konsep AI diperkenalkan agar komputer dapat mengambil keputusannya sendiri, namun masih dalam tahap pengembangan. <span class="s">S2</span></p>
+          <ul class="quick">
+            <li><b>Teknologi</b><span>AI/robotika, ULSI, pemrosesan paralel</span></li>
+            <li><b>Bahasa</b><span>Tingkat tinggi: C++, .Net, Java</span></li>
+            <li><b>Interaksi</b><span>Bahasa alami; pengenalan wajah &amp; suara</span></li>
+            <li><b>Contoh</b><span>Laptop, tablet, mainframe, superkomputer</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g5-tech"><h4 id="g5-tech"><span class="n">01</span>Teknologi utama</h4>
+          <p>Teknologi <strong>ULSI</strong> (Ultra Large Scale Integration) menonjol pada generasi ini. S1 menyebut komputer generasi ini memiliki sepuluh juta komponen elektronik yang menghasilkan chip mikroprosesor. <span class="s">S1</span> Pemrosesan paralel dan AI disebut oleh S2. <span class="s">S2</span></p></section>
+        <section class="card reveal" aria-labelledby="g5-char"><h4 id="g5-char"><span class="n">02</span>Karakteristik perangkat</h4>
+          <ul>
+            <li>Tujuan: membuat komputer lebih “manusiawi” sehingga merespons bahasa alami, misalnya pengenalan wajah dan suara pada perangkat bergerak. <span class="s">S1</span></li>
+            <li>Kecepatan sangat tinggi dan mampu pemrosesan paralel. <span class="s">S2</span></li>
+            <li>Masih dalam tahap pengembangan. <span class="s">S2</span></li>
+          </ul></section>
+        <section class="card reveal" aria-labelledby="g5-how"><h4 id="g5-how"><span class="n">03</span>Cara kerja &amp; prinsip teknologi</h4>
+          <p><strong>Pemrosesan paralel</strong> berarti beberapa pekerjaan dikerjakan secara bersamaan, bukan satu per satu. <span class="s">S2</span> <span class="badge-note">(Definisi umum penulis.)</span> <strong>Kecerdasan buatan</strong> diperkenalkan agar komputer dapat mengambil keputusannya sendiri. <span class="s">S2</span></p></section>
+        <section class="card reveal" aria-labelledby="g5-prog"><h4 id="g5-prog"><span class="n">04</span>Pemrograman &amp; penyimpanan</h4>
+          <p>Bahasa tingkat tinggi seperti C++, .Net, dan Java banyak dipakai pada generasi ini. <span class="s">S1</span> Media penyimpanan khusus generasi ini tidak dibahas oleh kedua PDF.</p></section>
+      </div>
+
+      <div class="pc">
+        <section class="card pros reveal" aria-labelledby="g5-pro"><h4 id="g5-pro">Kelebihan</h4>
+          <ul><li>Kecepatan sangat tinggi dan pemrosesan paralel. <span class="s">S2</span></li><li>Mampu merespons bahasa alami (suara, wajah). <span class="s">S1</span></li><li>Potensi pengambilan keputusan otomatis lewat AI. <span class="s">S2</span></li></ul></section>
+        <section class="card cons reveal" aria-labelledby="g5-con"><h4 id="g5-con">Kekurangan / batasan</h4>
+          <ul><li>AI masih dalam tahap pengembangan menurut S2. <span class="s">S2</span></li><li>Sumber tidak merinci kekurangan teknis lain.</li></ul></section>
+      </div>
+
+      <div class="blocks">
+        <section class="card reveal" aria-labelledby="g5-ex"><h4 id="g5-ex"><span class="n">05</span>Contoh komputer (menurut S1)</h4>
+          <ul>
+            <li><strong>Microcomputers</strong>: laptop, tablet, PDA, PC.</li>
+            <li><strong>Minicomputers</strong>: IBM 36, HP 9000.</li>
+            <li><strong>Mainframes</strong>: System z9 dan System z10.</li>
+            <li><strong>Supercomputers</strong>: Tianhe-I, IBM Roadrunner. <span class="s">S1</span></li>
+          </ul></section>
+        <section class="card reveal" aria-labelledby="g5-imp"><h4 id="g5-imp"><span class="n">06</span>Catatan kritis &amp; dampak</h4>
+          <p>S1 menyatakan hampir semua orang memiliki komputer generasi kelima, sedangkan S2 menegaskan bahwa generasi ini masih dalam pengembangan. <span class="s">S1</span> <span class="s">S2</span> Keduanya menggambarkan tahap yang berbeda, sehingga <strong>tidak tepat menyimpulkan bahwa setiap komputer modern otomatis termasuk generasi kelima</strong>, atau bahwa semua sistem AI modern memiliki karakteristik yang sama.</p></section>
+      </div>
+      <div class="callout reveal"><strong>Pengingat</strong>Pembagian lima generasi adalah kerangka historis untuk memahami perkembangan teknologi. Satu komputer modern bisa memuat chip VLSI/ULSI sekaligus menjalankan perangkat lunak AI atau non-AI; label generasi tidak otomatis menentukan kemampuannya.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ E. PHOTO ARCHIVE ============ -->
+<section class="sec archive" id="archive" aria-labelledby="archive-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">[ ARCHIVE 003 ] · [ PHOTO ARCHIVE ]</span>
+      <h2 id="archive-title">Machines Through Time</h2>
+      <p class="lead">Klik foto untuk memperbesar. Semua foto berasal dari Wikimedia Commons dengan lisensi bebas; kredit tertera di tiap caption dan di bagian References.</p>
+      <p class="badge-note">Foto generasi 2, 3, dan 5 belum dipasang karena tidak ada berkas yang lisensinya dapat saya verifikasi pada sesi ini; bagian tersebut memakai ilustrasi yang diberi label jelas.</p>
+    </div>
+
+    <div class="masonry">
+      <figure class="photo bw tilt-l reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colossus.jpg?width=900" alt="Foto arsip hitam-putih komputer Colossus, 1943" data-page="https://commons.wikimedia.org/wiki/File:Colossus.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G1</span>Colossus · 1943</b>Mesin pemecah sandi Lorenz buatan Inggris. <span class="s">S2</span><span class="credit">The National Archives (UK), domain publik · <a href="https://commons.wikimedia.org/wiki/File:Colossus.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo bw tilt-r reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eniac.jpg?width=1000" alt="Foto ENIAC yang diprogram dua operator di gedung 328 Ballistic Research Laboratory" data-page="https://commons.wikimedia.org/wiki/File:Eniac.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G1</span>ENIAC · c. 1947–1955</b>Glen Beck dan Betty Snyder memprogram ENIAC di Ballistic Research Laboratory. ENIAC tidak dibahas di kedua PDF; penempatan di Generasi 1 mengikuti literatur umum dan belum diverifikasi lewat sumber yang saya akses.<span class="credit">U.S. Army Photo, domain publik · <a href="https://commons.wikimedia.org/wiki/File:Eniac.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo bw tilt-l reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ordenador_IBM650_1959_MUNCYT.jpg?width=900" alt="Foto IBM 650 Magnetic Drum Data-Processing Machine di museum MUNCYT" data-page="https://commons.wikimedia.org/wiki/File:Ordenador_IBM650_1959_MUNCYT.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G1</span>IBM 650</b>Contoh generasi 1 menurut S1; memori berupa magnetic drum. <span class="s">S1</span><span class="credit">MUNCYT2 · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Ordenador_IBM650_1959_MUNCYT.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo tilt-r reveal">
+        <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi transistor"><use href="#i-transistor"/></svg></div>
+        <figcaption><b><span class="gtag">G2</span>Transistor (ilustrasi)</b>Gambar skematis buatan penulis website. Foto belum tersedia.</figcaption>
+      </figure>
+      <figure class="photo tilt-l reveal">
+        <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi chip sirkuit terpadu"><use href="#i-chip"/></svg></div>
+        <figcaption><b><span class="gtag">G3</span>Integrated circuit (ilustrasi)</b>Gambar skematis buatan penulis website. Foto belum tersedia.</figcaption>
+      </figure>
+      <figure class="photo tilt-r reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cray-1_(1).jpg?width=1000" alt="Foto superkomputer Cray-1 di Computer History Museum" data-page="https://commons.wikimedia.org/wiki/File:Cray-1_(1).jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G4</span>CRAY-1</b>Superkomputer; contoh generasi 4 menurut S1. <span class="s">S1</span><span class="credit">Foto: Ed Toton (2007), domain publik · <a href="https://commons.wikimedia.org/wiki/File:Cray-1_(1).jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo tilt-l reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Altair_8800_Computer.jpg?width=1000" alt="Foto Altair 8800 dengan sistem floppy disk 8 inci dan papan sirkuit" data-page="https://commons.wikimedia.org/wiki/File:Altair_8800_Computer.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G4</span>Altair 8800 · c. 1975</b>Komputer berbasis mikroprosesor Intel 8080, difoto di Vintage Computer Festival 2004. <span class="s x">+</span><span class="credit">Michael Holley (Swtpc6800), domain publik · <a href="https://commons.wikimedia.org/wiki/File:Altair_8800_Computer.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo tilt-r reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_II_IMG_4218-black.jpg?width=1000" alt="Foto komputer Apple II di Musée Bolo" data-page="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G4</span>Apple II · 1977</b>Komputer pribadi era mikroprosesor. <span class="s x">+</span><span class="credit">Rama &amp; Musée Bolo · CC BY-SA 2.0 FR · <a href="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo tilt-l reveal">
+        <button class="zoom" type="button" data-zoom aria-haspopup="dialog"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Intel_DX4_microprocessor_pins.jpg?width=900" alt="Foto mikroprosesor Intel DX4 dilihat dari sisi pin" data-page="https://commons.wikimedia.org/wiki/File:Intel_DX4_microprocessor_pins.jpg" loading="lazy" decoding="async"></button>
+        <figcaption><b><span class="gtag">G4</span>Mikroprosesor Intel DX4</b>Foto yang sama dipakai sebagai gambar mikroprosesor di S1 (referensi [11] S1).<span class="credit">Foto: M. Ollivander · lisensi: lihat halaman berkas · <a href="https://commons.wikimedia.org/wiki/File:Intel_DX4_microprocessor_pins.jpg" target="_blank" rel="noopener">Commons</a></span></figcaption>
+      </figure>
+      <figure class="photo tilt-r reveal">
+        <div class="art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" role="img" aria-label="Ilustrasi jaringan node kecerdasan buatan"><use href="#i-ai"/></svg></div>
+        <figcaption><b><span class="gtag">G5</span>Kecerdasan buatan (ilustrasi)</b>Gambar skematis buatan penulis website. Foto belum tersedia.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ F. COMPARISON TABLE ============ -->
+<section class="sec compare" id="comparison" aria-labelledby="cmp-title" data-view="table">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">[ ARCHIVE 004 ] · [ COMPARISON ]</span>
+      <h2 id="cmp-title">Five Generations Compared</h2>
+      <p class="lead">Tabel perbandingan dua puluh satu aspek untuk Generasi 1 sampai 5. Setiap sel menyebut sumbernya; bila PDF tidak memberi data, tertulis “Tidak disebutkan dalam sumber”.</p>
+    </div>
+
+    <div class="tools-bar">
+      <div class="seg" role="group" aria-label="Pilih tampilan perbandingan">
+        <button type="button" id="viewTable" aria-pressed="true">▦ Tabel</button>
+        <button type="button" id="viewCards" aria-pressed="false">▤ Kartu per aspek</button>
+      </div>
+      <p class="hint hint-scroll" style="margin:0">Geser tabel ke samping untuk melihat semua generasi →</p>
+    </div>
+
+    <div class="tscroll" role="region" aria-label="Tabel perbandingan lima generasi komputer, dapat digulir" tabindex="0">
+      <table class="cmp" id="cmpTable">
+        <caption>Perbandingan Generasi 1–5. <span class="s">S1</span> Tennant/HackTech · <span class="s">S2</span> PDF kedua · <span class="s x">+</span> sumber tambahan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Aspek</th>
+            <th scope="col">Generasi 1<small>Vacuum Tubes</small></th>
+            <th scope="col">Generasi 2<small>Transistors</small></th>
+            <th scope="col">Generasi 3<small>Integrated Circuits</small></th>
+            <th scope="col">Generasi 4<small>Microprocessors</small></th>
+            <th scope="col">Generasi 5<small>Artificial Intelligence</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><th colspan="6" scope="colgroup">A · Identitas &amp; teknologi</th></tr>
+
+          <tr data-aspect="Periode perkembangan"><th scope="row">Periode perkembangan</th>
+            <td><span class="s">S1</span> 1940–1956<br><span class="s">S2</span> 1945–1955</td>
+            <td><span class="s">S1</span> 1959–1965<br><span class="s">S2</span> 1955–1965 (transistor hadir pertengahan 1950-an)</td>
+            <td><span class="s">S1</span> 1964–1974<br><span class="s">S2</span> 1965–1975</td>
+            <td><span class="s">S1</span> 1971–1980<br><span class="s">S2</span> 1976–sekarang</td>
+            <td><span class="s">S1</span> 1980–sekarang<br><span class="s">S2</span> komputer 1990-an; masih tahap pengembangan</td></tr>
+
+          <tr data-aspect="Teknologi utama"><th scope="row">Teknologi utama</th>
+            <td>Tabung vakum (vacuum tubes). <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Transistor menggantikan tabung vakum; satu transistor setara 40 tabung. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Integrated circuit (chip): beberapa transistor pada satu chip silikon. <span class="s">S2</span></td>
+            <td>VLSI dan mikroprosesor; jaringan komputer dan internet. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Kecerdasan buatan dan/atau robotika, ULSI, pemrosesan paralel. <span class="s">S1</span> <span class="s">S2</span></td></tr>
+
+          <tr data-aspect="Komponen pemrosesan utama"><th scope="row">Komponen pemrosesan utama</th>
+            <td>Puluhan ribu tabung vakum per mesin. <span class="s">S2</span></td>
+            <td>Transistor; memori inti magnetik (magnetic core) untuk instruksi. <span class="s">S1</span></td>
+            <td>Chip IC pada level SSI (puluhan transistor), MSI (ratusan), LSI (puluhan ribu). <span class="s">S2</span></td>
+            <td>Mikroprosesor/CPU berisi ALU, register, unit kontrol; chip VLSI (ratusan ribu transistor atau lebih). <span class="s">S2</span></td>
+            <td>Chip ULSI; S1 menyebut sepuluh juta komponen elektronik pada chip mikroprosesor. <span class="s">S1</span></td></tr>
+
+          <tr class="grp"><th colspan="6" scope="colgroup">B · Perangkat keras</th></tr>
+
+          <tr data-aspect="Ukuran fisik"><th scope="row">Ukuran fisik</th>
+            <td>Sangat besar, memenuhi seluruh ruangan. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Lebih kecil dari generasi 1. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Lebih kecil lagi; ukuran dan harga turun drastis. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Kecil; berkembang menjadi PC untuk rumah, kantor kecil, dan sekolah. <span class="s">S2</span></td>
+            <td>Beragam: dari laptop, tablet, dan PDA hingga mainframe dan superkomputer. <span class="s">S1</span> Ukuran spesifik tidak disebutkan.</td></tr>
+
+          <tr data-aspect="Kecepatan pemrosesan"><th scope="row">Kecepatan pemrosesan</th>
+            <td>Lambat. <span class="s">S2</span> Angka <span class="na">tidak disebutkan dalam sumber</span>.</td>
+            <td>Lebih cepat dari generasi 1. <span class="s">S2</span> Angka <span class="na">tidak disebutkan dalam sumber</span>.
+              </td>
+            <td>Lonjakan performa; instruksi dalam orde sepersemiliar detik. <span class="s">S1</span>
+              <span class="ex"><span class="s x">+</span> Contoh: IBM S/360 Model 30, 34.500 penjumlahan bilangan tetap/detik (CHM).</span></td>
+            <td>Lebih bertenaga dan efisien. <span class="s">S2</span> Angka <span class="na">tidak disebutkan dalam sumber</span>.
+              <span class="ex"><span class="s x">+</span> Contoh: Cray-1, clock 80 MHz (CHM). Satu contoh superkomputer, tidak mewakili seluruh generasi.</span></td>
+            <td>Kecepatan “sangat tinggi” dan mampu pemrosesan paralel. <span class="s">S2</span> Angka <span class="na">tidak disebutkan dalam sumber</span>.</td></tr>
+
+          <tr data-aspect="Kapasitas memori"><th scope="row">Kapasitas memori</th>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span>
+              <span class="ex"><span class="s x">+</span> Contoh: drum memori IBM 650 menyimpan 20.000 digit pada 2.000 alamat (Ingenium).</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span>
+              <span class="ex"><span class="s x">+</span> Contoh: IBM S/360 Model 30 memiliki memori inti 64 KB (CHM).</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span>
+              <span class="ex"><span class="s x">+</span> Contoh: Cray-1 hingga 8,39 MB (1.048.576 kata) menurut ringkasan Wikipedia.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td></tr>
+
+          <tr data-aspect="Media penyimpanan"><th scope="row">Media penyimpanan</th>
+            <td>Magnetic drum (memori); masukan kartu berlubang dan pita kertas, keluaran printout. <span class="s">S1</span></td>
+            <td>Pita magnetik <span class="s">S2</span>; memori inti magnetik. <span class="s">S1</span></td>
+            <td>Magnetic disk menggantikan pita; pita tetap dipakai sebagai backup. <span class="s">S2</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td></tr>
+
+          <tr data-aspect="Konsumsi daya"><th scope="row">Konsumsi daya</th>
+            <td><span class="na">Angka tidak disebutkan.</span> Sumber hanya menyebut biaya penggunaan yang mahal. <span class="s">S1</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td>Kebutuhan daya chip sangat kecil. <span class="s">S2</span> Angka <span class="na">tidak disebutkan</span>.</td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span>
+              <span class="ex"><span class="s x">+</span> Contoh: Cray-1A menggunakan 115 kW (ringkasan Wikipedia); satu mesin, tidak mewakili PC.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td></tr>
+
+          <tr data-aspect="Produksi panas"><th scope="row">Produksi panas</th>
+            <td>Tinggi; perlu pendingin udara ekstensif. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Masih bermasalah overheating. <span class="s">S1</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td></tr>
+
+          <tr data-aspect="Keandalan"><th scope="row">Keandalan</th>
+            <td>Rendah; tingkat kegagalan tinggi. <span class="s">S2</span></td>
+            <td>Lebih andal dari generasi 1. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Lebih andal lagi. <span class="s">S2</span></td>
+            <td>Andal. <span class="s">S2</span></td>
+            <td><span class="na">Tidak dinyatakan dalam sumber.</span></td></tr>
+
+          <tr data-aspect="Biaya"><th scope="row">Biaya</th>
+            <td>Mahal dari segi biaya dan penggunaan. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Lebih hemat biaya (cost effective). <span class="s">S1</span></td>
+            <td>Harga turun drastis sehingga lebih mudah diakses publik. <span class="s">S1</span></td>
+            <td>Lebih murah; PC berharga rendah. <span class="s">S2</span></td>
+            <td><span class="na">Tidak dinyatakan dalam sumber.</span></td></tr>
+
+          <tr class="grp"><th colspan="6" scope="colgroup">C · Perangkat lunak &amp; interaksi</th></tr>
+
+          <tr data-aspect="Bahasa pemrograman"><th scope="row">Bahasa pemrograman</th>
+            <td>Bahasa mesin; plugboard dan urutan 0 dan 1. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Assembly <span class="s">S1</span>; bahasa tingkat tinggi COBOL dan FORTRAN. <span class="s">S2</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span> S1 hanya menyebut sistem operasi berantarmuka.</td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td>Bahasa tingkat tinggi seperti C++, .Net, dan Java. <span class="s">S1</span></td></tr>
+
+          <tr data-aspect="Metode interaksi pengguna"><th scope="row">Metode interaksi pengguna</th>
+            <td>Kartu berlubang, pita kertas, printout; pemasangan kabel plugboard. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Pemrograman dengan pernyataan mirip bahasa Inggris. <span class="s">S2</span> Perangkat I/O <span class="na">tidak dirinci</span>.</td>
+            <td>Keyboard dan monitor mulai digunakan; sistem operasi berantarmuka. <span class="s">S1</span></td>
+            <td>Command-driven (ketik lewat keyboard) hingga pertengahan 1980-an, lalu GUI dengan mouse. Alto (1973), Macintosh (1984). <span class="s">S2</span></td>
+            <td>Bahasa alami, pengenalan wajah dan suara pada perangkat bergerak. <span class="s">S1</span></td></tr>
+
+          <tr data-aspect="Kemampuan pemrosesan"><th scope="row">Kemampuan pemrosesan</th>
+            <td>Satu masalah pada satu waktu. <span class="s">S1</span></td>
+            <td><span class="na">Tidak dirinci dalam sumber.</span></td>
+            <td><span class="na">Tidak dirinci dalam sumber.</span></td>
+            <td>Mendukung jaringan komputer dan internet. <span class="s">S1</span></td>
+            <td>Pemrosesan paralel. <span class="s">S2</span></td></tr>
+
+          <tr data-aspect="Tingkat otomatisasi"><th scope="row">Tingkat otomatisasi</th>
+            <td>Rendah: program dimasukkan lewat plugboard, kartu, dan pita. <span class="s">S1</span> <span class="s">S2</span> <span class="badge-note">(penilaian penulis dari uraian sumber)</span></td>
+            <td>Pemrograman lebih mudah lewat bahasa tingkat tinggi. <span class="s">S2</span></td>
+            <td>Sistem operasi hadir. <span class="s">S1</span></td>
+            <td>Antarmuka grafis meningkatkan kemudahan penggunaan. <span class="s">S2</span></td>
+            <td>Komputer diharapkan mengambil keputusan sendiri (masih dikembangkan). <span class="s">S2</span></td></tr>
+
+          <tr data-aspect="Kecerdasan buatan"><th scope="row">Kecerdasan buatan</th>
+            <td><span class="na">Tidak dibahas.</span></td>
+            <td><span class="na">Tidak dibahas.</span></td>
+            <td><span class="na">Tidak dibahas.</span></td>
+            <td><span class="na">Tidak dibahas.</span></td>
+            <td>Menjadi ciri utama; konsep AI diperkenalkan agar komputer mengambil keputusan sendiri dan masih tahap pengembangan. <span class="s">S2</span> Sistem tertanam AI/robotika berkembang pesat. <span class="s">S1</span></td></tr>
+
+          <tr class="grp"><th colspan="6" scope="colgroup">D · Penilaian</th></tr>
+
+          <tr data-aspect="Kelebihan"><th scope="row">Kelebihan</th>
+            <td>Generasi elektronik pertama; Colossus mempercepat pemecahan sandi Lorenz. <span class="s">S2</span> <span class="badge-note">(disarikan)</span></td>
+            <td>Kecil, cepat, andal, hemat biaya; bahasa tingkat tinggi. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Cepat, kecil, andal, murah, kebutuhan daya chip kecil. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Kecil, murah, bertenaga, efisien, andal; GUI memudahkan pengguna. <span class="s">S2</span></td>
+            <td>Cepat, paralel, merespons bahasa alami. <span class="s">S1</span> <span class="s">S2</span></td></tr>
+
+          <tr data-aspect="Kekurangan"><th scope="row">Kekurangan</th>
+            <td>Besar, panas, tidak andal, lambat, mahal; pemrograman sulit. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Masalah overheating. <span class="s">S1</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td><span class="na">Tidak disebutkan dalam sumber.</span></td>
+            <td>Masih tahap pengembangan. <span class="s">S2</span></td></tr>
+
+          <tr class="grp"><th colspan="6" scope="colgroup">E · Contoh, penggunaan &amp; pengaruh</th></tr>
+
+          <tr data-aspect="Contoh komputer"><th scope="row">Contoh komputer</th>
+            <td>IBM 650 <span class="s">S1</span>; Colossus (1943). <span class="s">S2</span></td>
+            <td>UNIVAC 1108 (menurut S1). <span class="s">S1</span></td>
+            <td>IBM-360 series. <span class="s">S1</span></td>
+            <td>CRAY-1 <span class="s">S1</span>; Xerox Alto, Macintosh. <span class="s">S2</span></td>
+            <td>Laptop, tablet, PDA, PC; IBM 36, HP 9000; System z9/z10; Tianhe-I, IBM Roadrunner. <span class="s">S1</span></td></tr>
+
+          <tr data-aspect="Penggunaan utama"><th scope="row">Penggunaan utama</th>
+            <td>Pemecahan sandi perang (Colossus) <span class="s">S2</span>; pengolahan data (IBM 650, sesuai namanya). <span class="s">S1</span></td>
+            <td>Penggunaan bisnis dan ilmiah, tersirat dari nama COBOL dan FORTRAN. <span class="s">S2</span> <span class="badge-note">(tafsiran penulis)</span></td>
+            <td>Lebih mudah diakses publik. <span class="s">S1</span></td>
+            <td>Rumah, kantor kecil, dan sekolah. <span class="s">S2</span></td>
+            <td>Pengenalan wajah dan suara; sistem berbasis AI/robotika. <span class="s">S1</span></td></tr>
+
+          <tr data-aspect="Pengaruh terhadap generasi berikutnya"><th scope="row">Pengaruh terhadap generasi berikutnya</th>
+            <td>Keterbatasan ukuran, panas, dan keandalan mendorong peralihan ke transistor. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td>Transistor yang mengecil dan chip semikonduktor melahirkan generasi 3. <span class="s">S1</span></td>
+            <td>Tingkat integrasi naik ke VLSI pada generasi 4. <span class="s">S2</span></td>
+            <td>Jaringan, internet, dan GUI membentuk komputasi sehari-hari. <span class="s">S1</span> <span class="s">S2</span></td>
+            <td><span class="na">Tidak dibahas;</span> sumber menyebutnya generasi terkini yang masih berkembang. <span class="s">S1</span> <span class="s">S2</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-view" id="cardView">
+      <label for="aspectSelect">Pilih aspek perbandingan</label>
+      <select id="aspectSelect"></select>
+      <div class="cv-grid" id="cvGrid" aria-live="polite"></div>
+    </div>
+
+    <div class="cmp-notes">
+      <div class="card"><h3>Cara membaca tabel</h3>
+        <p>Nilai dalam satu generasi dapat berbeda antar-perangkat: kecepatan, kapasitas memori, dan daya berbeda-beda bahkan pada generasi yang sama. Karena itu contoh bertanda <span class="s x">+</span> hanya satu mesin, bukan rata-rata generasi, dan sengaja tidak dipaksakan menjadi perbandingan langsung.</p></div>
+      <div class="card"><h3>Batas perbandingan</h3>
+        <p>Generasi 5 digambarkan sumber lewat karakteristiknya (AI, paralel, ULSI), bukan lewat angka. Kolom ini tidak boleh dibaca sebagai deskripsi semua sistem AI modern. Sel “Tidak disebutkan dalam sumber” berarti PDF tidak memuat datanya, bukan berarti nilainya nol atau tidak ada.</p></div>
+      <div class="card"><h3>Keterangan sumber</h3>
+        <p><span class="s">S1</span> Tennant, A. <em>History of Computers</em> (HackTech). <span class="s">S2</span> <em>History of Computers</em> (PDF kedua). <span class="s x">+</span> Sumber tambahan: Computer History Museum, Ingenium, Wikipedia; tautan lengkap di References. Penilaian bertanda “penulis” adalah tafsiran penulis website.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ G. TIMELINE ============ -->
+<section class="sec timeline-sec" id="timeline" aria-labelledby="tl-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">[ ARCHIVE 005 ] · [ TIMELINE ]</span>
+      <h2 id="tl-title">The Evolution</h2>
+      <p class="lead">Urutan kronologis dari alat hitung awal hingga generasi kelima. Entri generasi diletakkan pada tahun mulai menurut S2 (yang lebih konservatif); rentang S1 dan S2 lengkap ada di setiap kartu generasi.</p>
+    </div>
+    <ol class="tl">
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-person"/></svg></span><div class="box"><span class="yr">1613</span><h3>Istilah “computer” tercatat</h3><p>Dipakai untuk menyebut orang yang pekerjaannya melakukan perhitungan. <span class="s">S1</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-abacus"/></svg></span><div class="box"><span class="yr">±2400 SM / ±5000 SM</span><h3>Abacus</h3><p>Alat hitung berbingkai dengan batang dan manik; asalnya dicatat berbeda oleh S1 (Babilonia, 2400 SM) dan S2 (5000 SM, Mesir dan Tiongkok). Bentuk yang dikenal dipakai di Tiongkok sekitar 500 SM. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-rods"/></svg></span><div class="box"><span class="yr">1614</span><h3>Napier’s Bones</h3><p>Alat kali, bagi, dan akar dengan batang pada papan khusus. <span class="s">S1</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-slide"/></svg></span><div class="box"><span class="yr">1620-an</span><h3>Slide rule</h3><p>Perkembangan alat hitung berikutnya menurut S2. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-gear"/></svg></span><div class="box"><span class="yr">1642</span><h3>Kalkulator Pascal</h3><p>Mesin hitung mekanis oleh Blaise Pascal, dibuat untuk membantu pekerjaan pajak ayahnya. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-gear"/></svg></span><div class="box"><span class="yr">1672</span><h3>Stepped Reckoner</h3><p>Leibniz membuat mesin yang melakukan empat operasi hitung secara otomatis. <span class="s">S1</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-engine"/></svg></span><div class="box"><span class="yr">1822</span><h3>Difference Engine</h3><p>Rancangan Charles Babbage; kemungkinan komputer pertama yang dirancang. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-engine"/></svg></span><div class="box"><span class="yr">1834</span><h3>Analytical Engine</h3><p>Mesin yang lebih rumit, sepenuhnya mekanis; sebagian besar komponennya tak dapat dibuat pada zamannya. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-tube"/></svg></span><div class="box"><span class="yr">1943</span><h3>Colossus</h3><p>Dibangun Inggris untuk mempercepat pemecahan sandi Lorenz. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-tube"/></svg></span><div class="box"><span class="yr">1940/1945 – 1955/1956</span><h3>Generasi 1: Vacuum Tubes</h3><p>Komputer sebesar ruangan berbasis tabung vakum, memori magnetic drum, bahasa mesin. Contoh: IBM 650. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-transistor"/></svg></span><div class="box"><span class="yr">1955/1959 – 1965</span><h3>Generasi 2: Transistors</h3><p>Transistor menggantikan tabung; COBOL, FORTRAN, dan pita magnetik. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-chip"/></svg></span><div class="box"><span class="yr">1964/1965 – 1974/1975</span><h3>Generasi 3: Integrated Circuits</h3><p>Chip silikon, SSI–LSI, magnetic disk, sistem operasi. Contoh: IBM-360. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-gui"/></svg></span><div class="box"><span class="yr">1973</span><h3>Prototipe Alto (Xerox PARC)</h3><p>Konsep GUI pertama kali dikembangkan lewat prototipe Alto. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-cpu"/></svg></span><div class="box"><span class="yr">1971/1976 – sekarang</span><h3>Generasi 4: Microprocessors</h3><p>VLSI, CPU dalam satu chip, PC, jaringan, dan internet. Contoh: CRAY-1. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-gui"/></svg></span><div class="box"><span class="yr">1984</span><h3>Macintosh</h3><p>Komputer Apple yang membawa antarmuka ramah pengguna ke banyak pengguna PC. <span class="s">S2</span></p></div></li>
+      <li class="reveal"><span class="dot"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-ai"/></svg></span><div class="box"><span class="yr">1980 (S1) / 1990-an (S2) – sekarang</span><h3>Generasi 5: Artificial Intelligence</h3><p>AI, pemrosesan paralel, ULSI; menurut S2 masih dalam tahap pengembangan. <span class="s">S1</span> <span class="s">S2</span></p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ H. CONCLUSION ============ -->
+<section class="sec conclusion" id="conclusion" aria-labelledby="concl-title">
+  <div class="wrap concl-grid">
+    <div class="reveal">
+      <span class="label">[ ARCHIVE 006 ] · [ CONCLUSION ]</span>
+      <h2 id="concl-title">From Past to Future</h2>
+      <p class="pull">Tiap generasi lahir ketika komponen baru memecahkan masalah generasi sebelumnya, lalu membuka masalah baru.</p>
+    </div>
+    <div class="concl-text reveal">
+      <h3>Perubahan teknologi utama</h3>
+      <p>Jalur teknologinya jelas: tabung vakum, transistor, integrated circuit, mikroprosesor, lalu sistem yang dirancang untuk berperilaku “cerdas”. Setiap langkah mengganti komponen inti dengan yang jauh lebih padat. S1 menyatakan satu transistor setara 40 tabung vakum, S2 mencatat tingkat integrasi yang naik dari puluhan transistor per chip (SSI) hingga ratusan ribu atau lebih (VLSI). <span class="s">S1</span> <span class="s">S2</span></p>
+      <h3>Komponen, ukuran, kecepatan, efisiensi, keandalan</h3>
+      <p>Kelima aspek itu saling terkait. Komponen yang lebih kecil membuat mesin lebih kecil, kebutuhan daya chip lebih rendah, dan harga lebih terjangkau. Keandalan membaik karena tabung yang rentan rusak diganti komponen padat, dan kecepatan meningkat hingga orde sepersemiliar detik pada generasi 3. Namun kemajuan tidak otomatis menghapus masalah lama: panas tetap menjadi persoalan pada generasi 2. <span class="s">S1</span> <span class="s">S2</span></p>
+      <h3>Cara manusia berinteraksi dengan komputer</h3>
+      <p>Interaksi bergeser dari memasang kabel plugboard dan memasukkan 0 dan 1, ke kartu berlubang dan pita kertas, ke bahasa assembly dan bahasa tingkat tinggi, ke keyboard dan monitor, ke perintah ketikan, lalu ke GUI dengan mouse. Generasi kelima mengarah pada interaksi lewat bahasa alami, wajah, dan suara. Pola umumnya: komputer semakin menyesuaikan diri dengan manusia, bukan sebaliknya. <span class="s">S1</span> <span class="s">S2</span></p>
+      <h3>Mengapa penting untuk Arsitektur dan Organisasi Komputer</h3>
+      <p>Sejarah ini menjelaskan <em>mengapa</em> komputer dirancang seperti sekarang. Mikroprosesor yang memuat ALU, register, dan unit kontrol, serta tingkatan penyimpanan dari drum, inti magnetik, pita, hingga disk, adalah hasil kompromi antara teknologi komponen, biaya, dan kebutuhan pengguna. Memahami kompromi tersebut membantu mahasiswa menilai rancangan arsitektur modern secara kritis. <span class="s">S1</span> <span class="s">S2</span></p>
+      <p><strong>Catatan akhir:</strong> perbedaan periodisasi antara S1 dan S2, serta status generasi kelima yang masih berkembang, mengingatkan bahwa “generasi” adalah alat bantu belajar, bukan hukum alam.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ I. REFERENCES ============ -->
+<section class="sec refs" id="references" aria-labelledby="refs-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">[ ARCHIVE 007 ] · [ REFERENCES ]</span>
+      <h2 id="refs-title">References &amp; Image Credits</h2>
+      <p class="lead">Format mengikuti APA edisi ke-7 sejauh metadata sumber tersedia. Keterbatasan metadata dinyatakan apa adanya.</p>
+    </div>
+
+    <h3>Sumber utama (PDF)</h3>
+    <ol>
+      <li>Tennant, A. (n.d.). <em>History of computers</em> [Dokumen PDF]. HackTech. <br><span class="muted">Tahun terbit tidak tertera pada dokumen. Daftar pustaka dokumen ini mencantumkan akses pada Oktober 2022. Dokumen tersebut tidak menyertakan URL asli.</span></li>
+      <li><em>History of computers</em>. (n.d.). [Dokumen PDF, bagian dari buku/modul]. <br><span class="muted">Nama penulis, penerbit, dan tahun terbit tidak tertera pada halaman yang dibaca. Daftar pustaka di akhir dokumen memuat laporan proyek yang tidak berkaitan dengan uraian sejarah, sehingga tidak dipakai sebagai sumber turunan di sini.</span></li>
+      <li>Dosen mata kuliah Arsitektur dan Organisasi Komputer. (n.d.). <em>Tugas 1 individu: Arsitektur dan Organisasi Komputer (ARSIKOM)</em> [Slide kuliah]. <br><span class="muted">Dipakai sebagai instruksi tugas, bukan sebagai sumber materi.</span></li>
+    </ol>
+
+    <h3>Sumber tambahan yang benar-benar diakses</h3>
+    <ul>
+      <li>Computer History Museum. (n.d.). <em>IBM System/360 Model 30 computer</em>. <a href="https://www.computerhistory.org/revolution/mainframe-computers/7/161/570?position=2" target="_blank" rel="noopener">computerhistory.org/revolution/mainframe-computers/7/161/570</a></li>
+      <li>Computer History Museum. (n.d.). <em>The Cray-1 supercomputer</em>. <a href="https://www.computerhistory.org/revolution/supercomputers/10/7" target="_blank" rel="noopener">computerhistory.org/revolution/supercomputers/10/7</a></li>
+      <li>Computer History Museum. (2014, 21 Oktober). <em>Computer History Museum adds historic Xerox Alto source code</em>. <a href="https://computerhistory.org/blog/xerox-alto/" target="_blank" rel="noopener">computerhistory.org/blog/xerox-alto</a></li>
+      <li>Ingenium. (n.d.). <em>Memory, drum</em> (IBM 650; artefak 2004.0155.001). <a href="https://collection.ingenium.ca/item/2004.0155.001" target="_blank" rel="noopener">collection.ingenium.ca/item/2004.0155.001</a></li>
+      <li>Ingenium. (n.d.). <em>Altair 8800B, central processing unit</em> (artefak 1984.0774.001). <a href="https://collection.ingenium.ca/en/id/1984.0774.001" target="_blank" rel="noopener">collection.ingenium.ca/en/id/1984.0774.001</a></li>
+      <li>Ingenium. (n.d.). <em>Computer, Apple II Plus</em> (artefak 2002.0325.001). <a href="https://collection.ingenium.ca/item/2002.0325.001" target="_blank" rel="noopener">collection.ingenium.ca/item/2002.0325.001</a></li>
+      <li>Gunkies. (n.d.). <em>IBM 650</em>. <a href="https://gunkies.org/wiki/IBM_650" target="_blank" rel="noopener">gunkies.org/wiki/IBM_650</a></li>
+      <li>Science Museum Group. (n.d.). <em>Napier’s bones</em> (koleksi). <a href="https://collection.sciencemuseum.org.uk/objects/co60590" target="_blank" rel="noopener">collection.sciencemuseum.org.uk/objects/co60590</a></li>
+      <li>Science Museum Group. (n.d.). <em>Intel 4004 processor (open)</em>. <a href="https://collection.sciencemuseumgroup.org.uk/objects/co523245/intel-4004-processor-open" target="_blank" rel="noopener">collection.sciencemuseumgroup.org.uk/objects/co523245</a></li>
+      <li>Wikipedia. (n.d.). <em>Colossus computer</em>. <a href="https://en.wikipedia.org/wiki/Colossus_computer" target="_blank" rel="noopener">en.wikipedia.org/wiki/Colossus_computer</a></li>
+      <li>Wikipedia. (n.d.). <em>Cray-1</em> (salinan Kiwix, spesifikasi memori dan daya). <a href="https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Cray-1" target="_blank" rel="noopener">kiwix.lema.org/…/A/Cray-1</a></li>
+    </ul>
+
+    <h3>Kredit foto</h3>
+    <div class="ctab-wrap">
+      <table class="credit-table">
+        <caption class="sr-only">Daftar kredit foto</caption>
+        <thead><tr><th scope="col">Foto</th><th scope="col">Pembuat</th><th scope="col">Lisensi</th><th scope="col">Sumber</th></tr></thead>
+        <tbody>
+          <tr><td>Colossus (1943)</td><td>The National Archives (UK), FO 850/234</td><td>Domain publik</td><td><a href="https://commons.wikimedia.org/wiki/File:Colossus.jpg" target="_blank" rel="noopener">File:Colossus.jpg</a></td></tr>
+          <tr><td>ENIAC</td><td>U.S. Army Photo</td><td>Domain publik</td><td><a href="https://commons.wikimedia.org/wiki/File:Eniac.jpg" target="_blank" rel="noopener">File:Eniac.jpg</a></td></tr>
+          <tr><td>IBM 650</td><td>MUNCYT2</td><td>CC BY-SA 3.0</td><td><a href="https://commons.wikimedia.org/wiki/File:Ordenador_IBM650_1959_MUNCYT.jpg" target="_blank" rel="noopener">File:Ordenador_IBM650_1959_MUNCYT.jpg</a></td></tr>
+          <tr><td>Cray-1</td><td>Ed Toton (2007)</td><td>Domain publik</td><td><a href="https://commons.wikimedia.org/wiki/File:Cray-1_(1).jpg" target="_blank" rel="noopener">File:Cray-1_(1).jpg</a></td></tr>
+          <tr><td>Altair 8800</td><td>Michael Holley (Swtpc6800), 2004</td><td>Domain publik</td><td><a href="https://commons.wikimedia.org/wiki/File:Altair_8800_Computer.jpg" target="_blank" rel="noopener">File:Altair_8800_Computer.jpg</a></td></tr>
+          <tr><td>Apple II</td><td>Rama &amp; Musée Bolo</td><td>CC BY-SA 2.0 FR</td><td><a href="https://commons.wikimedia.org/wiki/File:Apple_II_IMG_4218-black.jpg" target="_blank" rel="noopener">File:Apple_II_IMG_4218-black.jpg</a></td></tr>
+          <tr><td>Intel 8080</td><td>Konstantin Lanzet</td><td>CC BY-SA 3.0</td><td><a href="https://commons.wikimedia.org/wiki/File:KL_Intel_i8080_Black_Background.jpg" target="_blank" rel="noopener">File:KL_Intel_i8080_Black_Background.jpg</a></td></tr>
+          <tr><td>Intel DX4 (pin)</td><td>M. Ollivander (menurut S1)</td><td>Lihat halaman berkas</td><td><a href="https://commons.wikimedia.org/wiki/File:Intel_DX4_microprocessor_pins.jpg" target="_blank" rel="noopener">File:Intel_DX4_microprocessor_pins.jpg</a></td></tr>
+          <tr><td>Pascaline</td><td>David Monniaux (2005)</td><td>CC BY-SA 3.0</td><td><a href="https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg" target="_blank" rel="noopener">File:Arts_et_Metiers_Pascaline_dsc03869.jpg</a></td></tr>
+          <tr><td>Stepped Reckoner</td><td>J. A. V. Turck (1921)</td><td>Domain publik</td><td><a href="https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner.png" target="_blank" rel="noopener">File:Leibniz_Stepped_Reckoner.png</a></td></tr>
+          <tr><td>Difference Engine (bagian)</td><td>Lihat halaman berkas</td><td>CC BY-SA 2.0</td><td><a href="https://commons.wikimedia.org/wiki/File:BabbageDifferenceEngine.jpg" target="_blank" rel="noopener">File:BabbageDifferenceEngine.jpg</a></td></tr>
+          <tr><td>Ikon &amp; ilustrasi (abacus, transistor, chip, jaringan AI, dll.)</td><td>Penulis website</td><td>Dibuat sendiri (SVG)</td><td>Tertanam pada <code>index.html</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="badge-note" style="margin-top:1rem">Foto dimuat langsung dari Wikimedia Commons lewat tautan <code>Special:FilePath</code>. Bila foto tidak muncul (misalnya sedang offline), kotak pengganti dengan tautan ke halaman berkas akan ditampilkan.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><strong>THE COMPUTER ARCHIVE</strong> · From Vacuum Tubes to Artificial Intelligence</p>
+      <p>Tugas Individu 1 — Arsitektur dan Organisasi Komputer (ARSIKOM)</p>
+      <!-- Tambahkan nama dan NIM Anda di sini, misalnya: <p>Disusun oleh: Nama — NIM</p> -->
+    </div>
+    <div>
+      <p><a href="#home">Home</a> · <a href="#history">History</a> · <a href="#generations">Generations</a> · <a href="#archive">Archive</a> · <a href="#comparison">Comparison</a> · <a href="#timeline">Timeline</a> · <a href="#references">References</a></p>
+      <p>Foto: Wikimedia Commons (lihat kredit). Tipografi: IBM Plex Mono.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" type="button" aria-label="Kembali ke atas">↑</button>
+
+<dialog id="lightbox" aria-label="Pratinjau foto">
+  <div class="lb">
+    <div class="lb-bar">
+      <span class="lb-count" aria-live="polite"></span>
+      <button type="button" class="lb-close" aria-label="Tutup pratinjau">✕ Tutup</button>
+    </div>
+    <figure><img alt="" src=""><figcaption></figcaption></figure>
+    <div class="lb-bar">
+      <button type="button" class="lb-prev" aria-label="Foto sebelumnya">← Sebelumnya</button>
+      <button type="button" class="lb-next" aria-label="Foto berikutnya">Berikutnya →</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
